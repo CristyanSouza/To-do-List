@@ -1,0 +1,180 @@
+/*   ROOT    */
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+body {
+  background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+  color:white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+ion-icon {
+  font-size: 25px;
+}
+
+
+#tasks-container {
+
+  width: 80%;
+  margin-inline: auto;
+}
+
+.btn {
+  position: absolute;
+  border: 1px solid #6f86d6;
+  cursor:pointer;
+  transition: 0.5s;
+  width: 60px;
+  height: 53px;
+  top: 0;
+  right: 0;
+}
+
+/*   HEADER / ADD    */
+
+h2 {
+  margin-bottom: 10px;
+}
+#tasks-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#add-tasks-form {
+position: relative;
+}
+
+#add-tasks-form input {
+  padding: 15px;
+  border: 1px solid #6f86d6;
+  background: #FFF;
+  color: #6f86d6;
+  font-size: 18px;
+  width: 100%;
+  height: 53px;
+  font-weight: bold;
+}
+
+#add-tasks-form input::placeholder {
+  color: #6f86d6;
+  font-weight: bold;
+}
+
+#add-tasks-form input:focus {
+  outline: none;
+}
+
+
+#add-btn:hover {
+  background-color: #6f86d6;
+  color:#FFF;
+}
+
+
+/*   LIST   */
+
+#task-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#task-list li {
+  position: relative;
+  text-align: left;
+  height: 50px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  background: #FFF;
+  color: #6f86d6;
+  border-bottom: 3px solid #6f86d6;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#task-list li .btn {
+  height: 35px;
+  width: 30px;
+  padding: 6px;
+  border: none;
+}
+
+#task-list ion-icon {
+  font-size: 18px;
+}
+
+.done-btn {
+  right: 40px;
+}
+
+.done-btn:hover {
+  background-color: #0ff80fb0;
+  color: #FFF;
+}
+
+
+.remove-btn:hover {
+  background-color: #f01212cc;
+  color: #FFF;
+}
+
+/* CLASS JS*/
+
+.hide {
+  display: none;
+}
+
+#task-list li.done {
+  background: #162458;
+  color: white;
+  text-decoration: line-through;
+}
+
+
+@media (max-width: 320px){
+  #task-list li {
+
+    text-align: center;
+    height: 150px;
+    padding-left: 0;
+}
+
+#task-list li .btn {
+
+    top: 100px;
+    left: 60%;
+}
+
+#task-list li .done-btn {
+  left: 20%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+#add-btn {
+  width: 100%;
+  height: 45px;
+  top: 50px;
+}
+
+#task-title {
+margin-bottom: 45px;
+}
+
+#add-tasks-form input::placeholder {
+  font-size: 14px;
+}
+
+}
+
+
+
+
